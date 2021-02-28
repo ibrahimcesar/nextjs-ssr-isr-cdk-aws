@@ -1,0 +1,1550 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "NextJsStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "NextJsStack.template.json"
+      },
+      "metadata": {
+        "/NextJsStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392",
+              "id": "4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392",
+              "packaging": "zip",
+              "sourceHash": "4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392",
+              "s3BucketParameter": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3BucketBF7A7F3F",
+              "s3KeyParameter": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3VersionKeyFAF93626",
+              "artifactHashParameter": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392ArtifactHashE56CD69A"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "new CustomResourceProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:161:25)",
+              "Function.getOrCreateProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:121:10)",
+              "Bucket.enableAutoDeleteObjects (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1801:45)",
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1389:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497",
+              "id": "fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497",
+              "packaging": "zip",
+              "sourceHash": "fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497",
+              "s3BucketParameter": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497S3BucketBA2C9883",
+              "s3KeyParameter": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497S3VersionKeyDB2EDB8F",
+              "artifactHashParameter": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497ArtifactHash4EF5394B"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24",
+              "id": "67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24",
+              "packaging": "zip",
+              "sourceHash": "67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24",
+              "s3BucketParameter": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3Bucket4D46ABB5",
+              "s3KeyParameter": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3VersionKeyB0F28861",
+              "artifactHashParameter": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24ArtifactHashBA91B77F"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "new LogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:138:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:124:12)",
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:83:27)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5",
+              "id": "4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5",
+              "packaging": "zip",
+              "sourceHash": "4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5",
+              "s3BucketParameter": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5S3Bucket0EDF5830",
+              "s3KeyParameter": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5S3VersionKeyC3711977",
+              "artifactHashParameter": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5ArtifactHash17B5D963"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:132:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+              "id": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+              "packaging": "file",
+              "sourceHash": "e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68",
+              "s3BucketParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
+              "s3KeyParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
+              "artifactHashParameter": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new LayerVersion (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:189:29)",
+              "new AwsCliLayer (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:193:16)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "id": "c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "packaging": "zip",
+              "sourceHash": "c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+              "s3BucketParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C",
+              "s3KeyParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70",
+              "artifactHashParameter": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "SingletonFunction.ensureLambda (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:119:12)",
+              "new SingletonFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:55:32)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:190:21)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59",
+              "id": "17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59",
+              "packaging": "zip",
+              "sourceHash": "17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59",
+              "s3BucketParameter": "AssetParameters17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59S3Bucket890FACE5",
+              "s3KeyParameter": "AssetParameters17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59S3VersionKey32849125",
+              "artifactHashParameter": "AssetParameters17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59ArtifactHash59F0CC79"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.f3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43",
+              "id": "f3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43",
+              "packaging": "zip",
+              "sourceHash": "f3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43",
+              "s3BucketParameter": "AssetParametersf3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43S3Bucket3971E6C6",
+              "s3KeyParameter": "AssetParametersf3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43S3VersionKey49B131D0",
+              "artifactHashParameter": "AssetParametersf3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43ArtifactHashD10E8774"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f",
+              "id": "b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f",
+              "packaging": "zip",
+              "sourceHash": "b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f",
+              "s3BucketParameter": "AssetParametersb6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6fS3Bucket298A56A8",
+              "s3KeyParameter": "AssetParametersb6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6fS3VersionKey4DD31D0E",
+              "artifactHashParameter": "AssetParametersb6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6fArtifactHashE80D6FEE"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2",
+              "id": "ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2",
+              "packaging": "zip",
+              "sourceHash": "ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2",
+              "s3BucketParameter": "AssetParametersec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2S3Bucket79BDD579",
+              "s3KeyParameter": "AssetParametersec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2S3VersionKey7D605863",
+              "artifactHashParameter": "AssetParametersec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2ArtifactHash89B35E9A"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/PublicAssets/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppPublicAssets04474AF7",
+            "trace": [
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1323:22)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/PublicAssets/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppPublicAssetsPolicy3EC07500",
+            "trace": [
+              "new BucketPolicy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.ts:42:21)",
+              "Bucket.addToResourcePolicy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:504:21)",
+              "Function.addToPrincipalOrResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/grant.ts:147:45)",
+              "Bucket.grantPublicAccess (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:683:22)",
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1381:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/PublicAssets/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppPublicAssetsAutoDeleteObjectsCustomResource34FD50D1",
+            "trace": [
+              "new CustomResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource.ts:119:21)",
+              "Bucket.enableAutoDeleteObjects (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1820:28)",
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1389:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextEdgeLambdaRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextEdgeLambdaRole6A1616F1",
+            "trace": [
+              "new Role (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:63:28)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextLambdaBA081175",
+            "trace": [
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:614:35)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextLambda/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextLambdaLogRetentionB6609DC5",
+            "trace": [
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:88:22)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextLambda/CurrentVersion/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextLambdaCurrentVersion4A0FAFFFcd51f16a9f23186600f1fa32dac86633",
+            "trace": [
+              "new Version (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:187:21)",
+              "Function.get currentVersion [as currentVersion] (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:353:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:97:23)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextLambda/CurrentVersion/Aliaslive/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextLambdaCurrentVersionAliasliveA2F1A336",
+            "trace": [
+              "new Alias (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/alias.ts:148:19)",
+              "Object.addAlias (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/util.ts:6:10)",
+              "Version.addAlias (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:243:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:97:38)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextImageLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextImageLambda8C77998E",
+            "trace": [
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:614:35)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:132:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextImageLambda/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextImageLambdaLogRetention29947842",
+            "trace": [
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:88:22)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:132:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextImageLambda/CurrentVersion/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextImageLambdaCurrentVersionE2204C820e761836c5fe48313b9f61ac052e0e5f",
+            "trace": [
+              "new Version (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:187:21)",
+              "Function.get currentVersion [as currentVersion] (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:353:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:152:23)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextImageLambda/CurrentVersion/EventInvokeConfig/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextImageLambdaCurrentVersionEventInvokeConfig73E90EBB",
+            "trace": [
+              "new EventInvokeConfig (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/event-invoke-config.ts:84:5)",
+              "Version.configureAsyncInvoke (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:457:5)",
+              "new Version (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:206:12)",
+              "Function.get currentVersion [as currentVersion] (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:353:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:152:23)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextImageLambda/CurrentVersion/Aliaslive/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextImageLambdaCurrentVersionAliasliveA63EAB75",
+            "trace": [
+              "new Alias (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/alias.ts:148:19)",
+              "Object.addAlias (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/util.ts:6:10)",
+              "Version.addAlias (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:243:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:152:38)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextStaticsCache/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextStaticsCache6EC2D576",
+            "trace": [
+              "new CachePolicy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/cache-policy.ts:137:22)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:155:36)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextImageCache/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextImageCacheA9CBA950",
+            "trace": [
+              "new CachePolicy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/cache-policy.ts:137:22)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:171:34)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextLambdaCache/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextLambdaCache2A7551F8",
+            "trace": [
+              "new CachePolicy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/cache-policy.ts:137:22)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:187:35)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/ImageOriginRequest/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppImageOriginRequest6AF71D57",
+            "trace": [
+              "new OriginRequestPolicy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/origin-request-policy.ts:100:22)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:249:40)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextJSDistribution/Origin1/S3Origin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextJSDistributionOrigin1S3Origin760DE64A",
+            "trace": [
+              "new OriginAccessIdentity (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.ts:112:21)",
+              "S3BucketOrigin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:80:35)",
+              "S3Origin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:50:24)",
+              "Distribution.addOrigin (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:333:39)",
+              "new Distribution (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:271:27)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:218:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextJSDistribution/Origin2/S3Origin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextJSDistributionOrigin2S3Origin9E9817DB",
+            "trace": [
+              "new OriginAccessIdentity (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.ts:112:21)",
+              "S3BucketOrigin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:80:35)",
+              "S3Origin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:50:24)",
+              "Distribution.addOrigin (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:333:39)",
+              "Distribution.addBehavior (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:319:27)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:275:14",
+              "Array.forEach (<anonymous>)",
+              "new Distribution (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:274:49)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:218:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextJSDistribution/Origin3/S3Origin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextJSDistributionOrigin3S3Origin20C3EFCA",
+            "trace": [
+              "new OriginAccessIdentity (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.ts:112:21)",
+              "S3BucketOrigin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:80:35)",
+              "S3Origin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:50:24)",
+              "Distribution.addOrigin (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:333:39)",
+              "Distribution.addBehavior (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:319:27)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:275:14",
+              "Array.forEach (<anonymous>)",
+              "new Distribution (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:274:49)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:218:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextJSDistribution/Origin4/S3Origin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextJSDistributionOrigin4S3OriginE84D59E0",
+            "trace": [
+              "new OriginAccessIdentity (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.ts:112:21)",
+              "S3BucketOrigin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:80:35)",
+              "S3Origin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:50:24)",
+              "Distribution.addOrigin (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:333:39)",
+              "Distribution.addBehavior (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:319:27)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:275:14",
+              "Array.forEach (<anonymous>)",
+              "new Distribution (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:274:49)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:218:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextJSDistribution/Origin5/S3Origin/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextJSDistributionOrigin5S3Origin584D6386",
+            "trace": [
+              "new OriginAccessIdentity (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.ts:112:21)",
+              "S3BucketOrigin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:80:35)",
+              "S3Origin.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront-origins/lib/s3-origin.ts:50:24)",
+              "Distribution.addOrigin (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:333:39)",
+              "Distribution.addBehavior (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:319:27)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:275:14",
+              "Array.forEach (<anonymous>)",
+              "new Distribution (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:274:49)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:218:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/NextJSDistribution/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppNextJSDistributionB60DA7A7",
+            "trace": [
+              "new Distribution (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:282:26)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:218:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/AssetDeploymentBuildID/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppAssetDeploymentBuildIDAwsCliLayer8F0726F2",
+            "trace": [
+              "new LayerVersion (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:197:39)",
+              "new AwsCliLayer (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:193:16)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/AssetDeploymentBuildID/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppAssetDeploymentBuildIDCustomResource52DC1C3E",
+            "trace": [
+              "new CustomResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource.ts:119:21)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:218:5)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/AssetDeployment_publicFiles/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppAssetDeploymentpublicFilesAwsCliLayer1B7510EC",
+            "trace": [
+              "new LayerVersion (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:197:39)",
+              "new AwsCliLayer (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:193:16)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/AssetDeployment_publicFiles/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppAssetDeploymentpublicFilesCustomResource1BA9394D",
+            "trace": [
+              "new CustomResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource.ts:119:21)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:218:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/AssetDeployment_staticPages/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppAssetDeploymentstaticPagesAwsCliLayer78AEE35E",
+            "trace": [
+              "new LayerVersion (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:197:39)",
+              "new AwsCliLayer (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:193:16)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/AssetDeployment_staticPages/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppAssetDeploymentstaticPagesCustomResource977D68A2",
+            "trace": [
+              "new CustomResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource.ts:119:21)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:218:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/AssetDeployment_nextStatic/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppAssetDeploymentnextStaticAwsCliLayer01F74D38",
+            "trace": [
+              "new LayerVersion (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:197:39)",
+              "new AwsCliLayer (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:193:16)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/NextJsApp/AssetDeployment_nextStatic/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NextJsAppAssetDeploymentnextStaticCustomResourceA44267FC",
+            "trace": [
+              "new CustomResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource.ts:119:21)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:218:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
+            "trace": [
+              "new CustomResourceProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:177:18)",
+              "Function.getOrCreateProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:121:10)",
+              "Bucket.enableAutoDeleteObjects (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1801:45)",
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1389:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F",
+            "trace": [
+              "new CustomResourceProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:195:21)",
+              "Function.getOrCreateProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:121:10)",
+              "Bucket.enableAutoDeleteObjects (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1801:45)",
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1389:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3BucketBF7A7F3F",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "new CustomResourceProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:161:25)",
+              "Function.getOrCreateProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:121:10)",
+              "Bucket.enableAutoDeleteObjects (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1801:45)",
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1389:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3VersionKeyFAF93626",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "new CustomResourceProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:161:25)",
+              "Function.getOrCreateProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:121:10)",
+              "Bucket.enableAutoDeleteObjects (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1801:45)",
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1389:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392ArtifactHashE56CD69A",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "new CustomResourceProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:161:25)",
+              "Function.getOrCreateProvider (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/custom-resource-provider/custom-resource-provider.ts:121:10)",
+              "Bucket.enableAutoDeleteObjects (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1801:45)",
+              "new Bucket (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1389:12)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:53:19)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497S3BucketBA2C9883",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497S3VersionKeyDB2EDB8F",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497ArtifactHash4EF5394B",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3Bucket4D46ABB5",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "new LogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:138:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:124:12)",
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:83:27)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3VersionKeyB0F28861",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "new LogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:138:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:124:12)",
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:83:27)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24ArtifactHashBA91B77F",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "new LogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:138:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:124:12)",
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:83:27)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5S3Bucket0EDF5830",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:132:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5S3VersionKeyC3711977",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:132:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5ArtifactHash17B5D963",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:132:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new LayerVersion (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:189:29)",
+              "new AwsCliLayer (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:193:16)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new LayerVersion (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:189:29)",
+              "new AwsCliLayer (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:193:16)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new LayerVersion (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:189:29)",
+              "new AwsCliLayer (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:12:5)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:193:16)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "SingletonFunction.ensureLambda (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:119:12)",
+              "new SingletonFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:55:32)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:190:21)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "SingletonFunction.ensureLambda (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:119:12)",
+              "new SingletonFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:55:32)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:190:21)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "AssetCode.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/code.ts:251:20)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:572:29)",
+              "SingletonFunction.ensureLambda (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:119:12)",
+              "new SingletonFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:55:32)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:190:21)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59S3Bucket890FACE5",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59S3VersionKey32849125",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59ArtifactHash59F0CC79",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/f3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43S3Bucket3971E6C6",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/f3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43S3VersionKey49B131D0",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/f3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf3edd4fe13d1be808689e0ed9b4db92e1b820c6406c8d74b3b8feab59b1b6f43ArtifactHashD10E8774",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6fS3Bucket298A56A8",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6fS3VersionKey4DD31D0E",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersb6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6fArtifactHashE80D6FEE",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2S3Bucket79BDD579",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2S3VersionKey7D605863",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/AssetParameters/ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2ArtifactHash89B35E9A",
+            "trace": [
+              "new FileAssetParameters (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "NextStack.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack.ts:657:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:151:40)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:86:23)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:345:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:343:25)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+            "trace": [
+              "new Role (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new LogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:143:32)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:124:12)",
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:83:27)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+            "trace": [
+              "new Policy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "new LogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:148:10)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:124:12)",
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:83:27)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "trace": [
+              "new LogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:157:22)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:124:12)",
+              "new LogRetention (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:83:27)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:668:28)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:77:31)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "trace": [
+              "new Role (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:552:31)",
+              "SingletonFunction.ensureLambda (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:119:12)",
+              "new SingletonFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:55:32)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:190:21)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+            "trace": [
+              "new Policy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Import.grant (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:723:27)",
+              "Import.grantRead (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:601:17)",
+              "Asset.grantRead (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:210:17)",
+              "Object.bind (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:93:15)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:207:51)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "trace": [
+              "new Function (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/function.ts:614:35)",
+              "SingletonFunction.ensureLambda (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:119:12)",
+              "new SingletonFunction (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:55:32)",
+              "new BucketDeployment (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:190:21)",
+              "new NextJSLambdaEdge (/Users/ibrahim.souza/Projetos/barebones/node_modules/@sls-next/cdk-construct/src/index.ts:326:5)",
+              "new NextStack (/Users/ibrahim.souza/Projetos/barebones/stack.ts:9:5)",
+              "/Users/ibrahim.souza/Projetos/barebones/bin.ts:13:5"
+            ]
+          }
+        ],
+        "/NextJsStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:201:5)",
+              "visit (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:197:5)",
+              "injectMetadataResources (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit (/Users/ibrahim.souza/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/NextJsStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:201:5)",
+              "visit (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:197:5)",
+              "injectMetadataResources (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/ibrahim.souza/Projetos/barebones/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:422:26)",
+              "process.emit (events.js:315:20)",
+              "process.EventEmitter.emit (domain.js:467:12)",
+              "process.emit (/Users/ibrahim.souza/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
