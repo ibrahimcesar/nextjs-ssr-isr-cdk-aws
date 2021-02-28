@@ -11,7 +11,7 @@ const Pokemons = ({ data }) => {
       </Head>
       <div>
         <p style={{ fontFamily: '"Comic Sans MS", cursive, sans-serif', fontSize: "32px" }}>🤨 What is this horrible page? </p>
-        <p style={{fontSize: "20px"}}>First, thanks for the compliment! This a PoC (Proof of Concept) of a <Link href="https://nextjs.org/"><a>NextJS</a></Link> application using ISG (Incremental Static Generation) using SSR with the open <Link href="https://pokeapi.co/"><a>PokéAPI</a></Link>. Also is deployed on AWS using Lambda@Edge and CloudFront wit the <Link href="https://serverless-nextjs.com/docs/cdkconstruct/"><a>Serverless Nextjs CDK Construct</a></Link>. I just take one Ditto to recreate all other Pokémons! Really look at the source code!</p>
+        <p style={{ fontSize: "20px" }}>First, thanks for the compliment! This a PoC (Proof of Concept) of a <Link style={{fontWeight: "bold", fontFamily: '"Comic Sans MS", cursive, sans-serif', color: "tomato", textDecoration: "none"}} href="https://nextjs.org/"><a>NextJS</a></Link> application using SSR (Server Side Rendering) with the open <Link style={{fontWeight: "bold", fontFamily: '"Comic Sans MS", cursive, sans-serif', color: "tomato", textDecoration: "none"}} href="https://pokeapi.co/"><a>PokéAPI</a></Link>. Also is deployed on AWS using Lambda@Edge and CloudFront wit the <Link style={{fontWeight: "bold", fontFamily: '"Comic Sans MS", cursive, sans-serif', color: "tomato", textDecoration: "none"}} href="https://serverless-nextjs.com/docs/cdkconstruct/"><a>Serverless Nextjs CDK Construct</a></Link>. I just take one Ditto to recreate all other Pokémons! Really look at the <Link style={{fontWeight: "bold", fontFamily: '"Comic Sans MS", cursive, sans-serif', color: "tomato", textDecoration: "none"}} href="https://github.com/ibrahimcesar/nextjs-isg-cdk-aws"><a>source code</a></Link>!</p>
       </div>
       <h1>Pokémons</h1>
       <ul style={{listStyle: "none"}}>
@@ -30,8 +30,7 @@ export async function getStaticProps() {
   return {
     props: {
       data,
-    },
-    revalidate: 300,
+    }
   }
 }
 

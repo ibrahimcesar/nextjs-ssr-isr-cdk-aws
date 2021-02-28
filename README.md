@@ -4,12 +4,14 @@
 
 ## This is just a Proof of Concept
 
-Minimal NextJS with Incremental Static Generation (ISG) using Server Side Rendering (SSR) and deployed with Serverless Nextjs CDK construct on AWS using CloudFront and Lambda@Edge
+Minimal NextJS with Server Side Rendering (SSR) and deployed with [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/) on AWS using CloudFront and Lambda@Edge.
+
+Each one of the Pokémons pages are just a **Ditto** `[ditto].js` making a SSR call to the PokéApp, this way, transformig itself in the requested pokemon by name, e.g. [Toguepi](https://d2isii528175w2.cloudfront.net/togepi).
 
 
-## Thanks
-
- [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/), in special [Henry Kirkness](https://github.com/kirkness) and 
+## Thanks!
+[NextJS](https://nextjs.org/) – What a great framework! And the freedom to build and deploy wherever we need or want! Great fan  
+[Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/), in special [Henry Kirkness](https://github.com/kirkness) and 
 [Daniel Phang](https://github.com/dphang) for all work at [this feature](https://github.com/serverless-nextjs/serverless-next.js/pull/878).
  
  ### MIT License

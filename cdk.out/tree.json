@@ -381,7 +381,7 @@
                       "aws:cdk:cloudformation:props": {
                         "code": {
                           "s3Bucket": {
-                            "Ref": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497S3BucketBA2C9883"
+                            "Ref": "AssetParameters0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168S3BucketBEFD393F"
                           },
                           "s3Key": {
                             "Fn::Join": [
@@ -394,7 +394,7 @@
                                       "Fn::Split": [
                                         "||",
                                         {
-                                          "Ref": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497S3VersionKeyDB2EDB8F"
+                                          "Ref": "AssetParameters0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168S3VersionKey9E2B826C"
                                         }
                                       ]
                                     }
@@ -407,7 +407,7 @@
                                       "Fn::Split": [
                                         "||",
                                         {
-                                          "Ref": "AssetParametersfbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497S3VersionKeyDB2EDB8F"
+                                          "Ref": "AssetParameters0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168S3VersionKey9E2B826C"
                                         }
                                       ]
                                     }
@@ -427,7 +427,8 @@
                         "functionName": "NextDefaultLambda",
                         "handler": "index.handler",
                         "memorySize": 1024,
-                        "runtime": "nodejs12.x"
+                        "runtime": "nodejs12.x",
+                        "timeout": 30
                       }
                     },
                     "constructInfo": {
@@ -496,7 +497,7 @@
                                 },
                                 "functionVersion": {
                                   "Fn::GetAtt": [
-                                    "NextJsAppNextLambdaCurrentVersion4A0FAFFFcd51f16a9f23186600f1fa32dac86633",
+                                    "NextJsAppNextLambdaCurrentVersion4A0FAFFF144c46c8e2a4b7f61ce58541e313b6c8",
                                     "Version"
                                   ]
                                 },
@@ -572,7 +573,7 @@
                       "aws:cdk:cloudformation:props": {
                         "code": {
                           "s3Bucket": {
-                            "Ref": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5S3Bucket0EDF5830"
+                            "Ref": "AssetParameters2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0dS3BucketB53F4779"
                           },
                           "s3Key": {
                             "Fn::Join": [
@@ -585,7 +586,7 @@
                                       "Fn::Split": [
                                         "||",
                                         {
-                                          "Ref": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5S3VersionKeyC3711977"
+                                          "Ref": "AssetParameters2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0dS3VersionKey54213A8A"
                                         }
                                       ]
                                     }
@@ -598,7 +599,7 @@
                                       "Fn::Split": [
                                         "||",
                                         {
-                                          "Ref": "AssetParameters4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5S3VersionKeyC3711977"
+                                          "Ref": "AssetParameters2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0dS3VersionKey54213A8A"
                                         }
                                       ]
                                     }
@@ -618,7 +619,8 @@
                         "functionName": "NextImageLambda",
                         "handler": "index.handler",
                         "memorySize": 1024,
-                        "runtime": "nodejs12.x"
+                        "runtime": "nodejs12.x",
+                        "timeout": 30
                       }
                     },
                     "constructInfo": {
@@ -687,7 +689,7 @@
                                 },
                                 "qualifier": {
                                   "Fn::GetAtt": [
-                                    "NextJsAppNextImageLambdaCurrentVersionE2204C820e761836c5fe48313b9f61ac052e0e5f",
+                                    "NextJsAppNextImageLambdaCurrentVersionE2204C824dea4fe45ca75c389be55eadf7fbbdc2",
                                     "Version"
                                   ]
                                 },
@@ -720,7 +722,7 @@
                                 },
                                 "functionVersion": {
                                   "Fn::GetAtt": [
-                                    "NextJsAppNextImageLambdaCurrentVersionE2204C820e761836c5fe48313b9f61ac052e0e5f",
+                                    "NextJsAppNextImageLambdaCurrentVersionE2204C824dea4fe45ca75c389be55eadf7fbbdc2",
                                     "Version"
                                   ]
                                 },
@@ -1106,6 +1108,36 @@
                       "version": "1.91.0"
                     }
                   },
+                  "LoggingBucket": {
+                    "id": "LoggingBucket",
+                    "path": "NextJsStack/NextJsApp/NextJSDistribution/LoggingBucket",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "NextJsStack/NextJsApp/NextJSDistribution/LoggingBucket/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                          "aws:cdk:cloudformation:props": {}
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-s3.CfnBucket",
+                          "version": "1.91.0"
+                        }
+                      },
+                      "Notifications": {
+                        "id": "Notifications",
+                        "path": "NextJsStack/NextJsApp/NextJSDistribution/LoggingBucket/Notifications",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Construct",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3.Bucket",
+                      "version": "1.91.0"
+                    }
+                  },
                   "Resource": {
                     "id": "Resource",
                     "path": "NextJsStack/NextJsApp/NextJSDistribution/Resource",
@@ -1247,14 +1279,14 @@
                             "lambdaFunctionAssociations": [
                               {
                                 "lambdaFunctionArn": {
-                                  "Ref": "NextJsAppNextLambdaCurrentVersion4A0FAFFFcd51f16a9f23186600f1fa32dac86633"
+                                  "Ref": "NextJsAppNextLambdaCurrentVersion4A0FAFFF144c46c8e2a4b7f61ce58541e313b6c8"
                                 },
                                 "eventType": "origin-request",
                                 "includeBody": true
                               },
                               {
                                 "lambdaFunctionArn": {
-                                  "Ref": "NextJsAppNextLambdaCurrentVersion4A0FAFFFcd51f16a9f23186600f1fa32dac86633"
+                                  "Ref": "NextJsAppNextLambdaCurrentVersion4A0FAFFF144c46c8e2a4b7f61ce58541e313b6c8"
                                 },
                                 "eventType": "origin-response"
                               }
@@ -1289,7 +1321,7 @@
                               "lambdaFunctionAssociations": [
                                 {
                                   "lambdaFunctionArn": {
-                                    "Ref": "NextJsAppNextImageLambdaCurrentVersionE2204C820e761836c5fe48313b9f61ac052e0e5f"
+                                    "Ref": "NextJsAppNextImageLambdaCurrentVersionE2204C824dea4fe45ca75c389be55eadf7fbbdc2"
                                   },
                                   "eventType": "origin-request"
                                 }
@@ -1316,14 +1348,14 @@
                               "lambdaFunctionAssociations": [
                                 {
                                   "lambdaFunctionArn": {
-                                    "Ref": "NextJsAppNextLambdaCurrentVersion4A0FAFFFcd51f16a9f23186600f1fa32dac86633"
+                                    "Ref": "NextJsAppNextLambdaCurrentVersion4A0FAFFF144c46c8e2a4b7f61ce58541e313b6c8"
                                   },
                                   "eventType": "origin-request",
                                   "includeBody": true
                                 },
                                 {
                                   "lambdaFunctionArn": {
-                                    "Ref": "NextJsAppNextLambdaCurrentVersion4A0FAFFFcd51f16a9f23186600f1fa32dac86633"
+                                    "Ref": "NextJsAppNextLambdaCurrentVersion4A0FAFFF144c46c8e2a4b7f61ce58541e313b6c8"
                                   },
                                   "eventType": "origin-response"
                                 }
@@ -1370,7 +1402,15 @@
                           ],
                           "defaultRootObject": "",
                           "httpVersion": "http2",
-                          "ipv6Enabled": true
+                          "ipv6Enabled": true,
+                          "logging": {
+                            "bucket": {
+                              "Fn::GetAtt": [
+                                "NextJsAppNextJSDistributionLoggingBucket37E3858A",
+                                "RegionalDomainName"
+                              ]
+                            }
+                          }
                         }
                       }
                     },
@@ -1835,6 +1875,156 @@
                   "version": "1.91.0"
                 }
               },
+              "AssetDeployment_nextData": {
+                "id": "AssetDeployment_nextData",
+                "path": "NextJsStack/NextJsApp/AssetDeployment_nextData",
+                "children": {
+                  "AwsCliLayer": {
+                    "id": "AwsCliLayer",
+                    "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/AwsCliLayer",
+                    "children": {
+                      "Code": {
+                        "id": "Code",
+                        "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/AwsCliLayer/Code",
+                        "children": {
+                          "Stage": {
+                            "id": "Stage",
+                            "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/AwsCliLayer/Code/Stage",
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/core.AssetStaging",
+                              "version": "1.91.0"
+                            }
+                          },
+                          "AssetBucket": {
+                            "id": "AssetBucket",
+                            "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/AwsCliLayer/Code/AssetBucket",
+                            "constructInfo": {
+                              "fqn": "@aws-cdk/core.Resource",
+                              "version": "1.91.0"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                          "version": "1.91.0"
+                        }
+                      },
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/AwsCliLayer/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::Lambda::LayerVersion",
+                          "aws:cdk:cloudformation:props": {
+                            "content": {
+                              "s3Bucket": {
+                                "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7"
+                              },
+                              "s3Key": {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    {
+                                      "Fn::Select": [
+                                        0,
+                                        {
+                                          "Fn::Split": [
+                                            "||",
+                                            {
+                                              "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "Fn::Select": [
+                                        1,
+                                        {
+                                          "Fn::Split": [
+                                            "||",
+                                            {
+                                              "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                ]
+                              }
+                            },
+                            "description": "/opt/awscli/aws"
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/aws-lambda.CfnLayerVersion",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/lambda-layer-awscli.AwsCliLayer",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "CustomResourceHandler": {
+                    "id": "CustomResourceHandler",
+                    "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/CustomResourceHandler",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-lambda.SingletonFunction",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "Asset1": {
+                    "id": "Asset1",
+                    "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/Asset1",
+                    "children": {
+                      "Stage": {
+                        "id": "Stage",
+                        "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/Asset1/Stage",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.AssetStaging",
+                          "version": "1.91.0"
+                        }
+                      },
+                      "AssetBucket": {
+                        "id": "AssetBucket",
+                        "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/Asset1/AssetBucket",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.Resource",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/aws-s3-assets.Asset",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "CustomResource": {
+                    "id": "CustomResource",
+                    "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/CustomResource",
+                    "children": {
+                      "Default": {
+                        "id": "Default",
+                        "path": "NextJsStack/NextJsApp/AssetDeployment_nextData/CustomResource/Default",
+                        "constructInfo": {
+                          "fqn": "@aws-cdk/core.CfnResource",
+                          "version": "1.91.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CustomResource",
+                      "version": "1.91.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3-deployment.BucketDeployment",
+                  "version": "1.91.0"
+                }
+              },
               "AssetDeployment_nextStatic": {
                 "id": "AssetDeployment_nextStatic",
                 "path": "NextJsStack/NextJsApp/AssetDeployment_nextStatic",
@@ -2063,13 +2253,13 @@
                   "version": "1.91.0"
                 }
               },
-              "fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497": {
-                "id": "fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497",
-                "path": "NextJsStack/AssetParameters/fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497",
+              "0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168": {
+                "id": "0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168",
+                "path": "NextJsStack/AssetParameters/0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "NextJsStack/AssetParameters/fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497/S3Bucket",
+                    "path": "NextJsStack/AssetParameters/0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2077,7 +2267,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "NextJsStack/AssetParameters/fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497/S3VersionKey",
+                    "path": "NextJsStack/AssetParameters/0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2085,7 +2275,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "NextJsStack/AssetParameters/fbf88c6e3f58b23880eb98e4352481f8628e02010b0e50c48e48364be1617497/ArtifactHash",
+                    "path": "NextJsStack/AssetParameters/0d2f63be8513988fb57cf0ebd7dd2ec5c5bebf6cb38b769b0f226a5d4a7db168/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2131,13 +2321,13 @@
                   "version": "1.91.0"
                 }
               },
-              "4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5": {
-                "id": "4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5",
-                "path": "NextJsStack/AssetParameters/4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5",
+              "2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0d": {
+                "id": "2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0d",
+                "path": "NextJsStack/AssetParameters/2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0d",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "NextJsStack/AssetParameters/4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5/S3Bucket",
+                    "path": "NextJsStack/AssetParameters/2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0d/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2145,7 +2335,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "NextJsStack/AssetParameters/4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5/S3VersionKey",
+                    "path": "NextJsStack/AssetParameters/2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0d/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2153,7 +2343,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "NextJsStack/AssetParameters/4a9899daf3b5e0d15040a8eb5ff59c63f4cf4e97fcbb67398295f3426aafded5/ArtifactHash",
+                    "path": "NextJsStack/AssetParameters/2d8b25dbdfc092da64f2e5aace9963d851fbaf752d4977acddec68a664785d0d/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2233,13 +2423,13 @@
                   "version": "1.91.0"
                 }
               },
-              "17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59": {
-                "id": "17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59",
-                "path": "NextJsStack/AssetParameters/17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59",
+              "5f7b82c7a184781fd94f83dd69f64511326919b765839eb48a41b548b55cb952": {
+                "id": "5f7b82c7a184781fd94f83dd69f64511326919b765839eb48a41b548b55cb952",
+                "path": "NextJsStack/AssetParameters/5f7b82c7a184781fd94f83dd69f64511326919b765839eb48a41b548b55cb952",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "NextJsStack/AssetParameters/17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59/S3Bucket",
+                    "path": "NextJsStack/AssetParameters/5f7b82c7a184781fd94f83dd69f64511326919b765839eb48a41b548b55cb952/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2247,7 +2437,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "NextJsStack/AssetParameters/17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59/S3VersionKey",
+                    "path": "NextJsStack/AssetParameters/5f7b82c7a184781fd94f83dd69f64511326919b765839eb48a41b548b55cb952/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2255,7 +2445,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "NextJsStack/AssetParameters/17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59/ArtifactHash",
+                    "path": "NextJsStack/AssetParameters/5f7b82c7a184781fd94f83dd69f64511326919b765839eb48a41b548b55cb952/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2301,13 +2491,13 @@
                   "version": "1.91.0"
                 }
               },
-              "b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f": {
-                "id": "b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f",
-                "path": "NextJsStack/AssetParameters/b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f",
+              "23398b997211e2b9d889979e9c47c7d2a46d48b93926083bcf919179f40f47ff": {
+                "id": "23398b997211e2b9d889979e9c47c7d2a46d48b93926083bcf919179f40f47ff",
+                "path": "NextJsStack/AssetParameters/23398b997211e2b9d889979e9c47c7d2a46d48b93926083bcf919179f40f47ff",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "NextJsStack/AssetParameters/b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f/S3Bucket",
+                    "path": "NextJsStack/AssetParameters/23398b997211e2b9d889979e9c47c7d2a46d48b93926083bcf919179f40f47ff/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2315,7 +2505,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "NextJsStack/AssetParameters/b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f/S3VersionKey",
+                    "path": "NextJsStack/AssetParameters/23398b997211e2b9d889979e9c47c7d2a46d48b93926083bcf919179f40f47ff/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2323,7 +2513,7 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "NextJsStack/AssetParameters/b6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6f/ArtifactHash",
+                    "path": "NextJsStack/AssetParameters/23398b997211e2b9d889979e9c47c7d2a46d48b93926083bcf919179f40f47ff/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2335,13 +2525,13 @@
                   "version": "1.91.0"
                 }
               },
-              "ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2": {
-                "id": "ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2",
-                "path": "NextJsStack/AssetParameters/ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2",
+              "c0a446026cd171aa4e2011cd4053b893c5c9767e02965e2850805481c309ca55": {
+                "id": "c0a446026cd171aa4e2011cd4053b893c5c9767e02965e2850805481c309ca55",
+                "path": "NextJsStack/AssetParameters/c0a446026cd171aa4e2011cd4053b893c5c9767e02965e2850805481c309ca55",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "NextJsStack/AssetParameters/ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2/S3Bucket",
+                    "path": "NextJsStack/AssetParameters/c0a446026cd171aa4e2011cd4053b893c5c9767e02965e2850805481c309ca55/S3Bucket",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2349,7 +2539,7 @@
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "NextJsStack/AssetParameters/ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2/S3VersionKey",
+                    "path": "NextJsStack/AssetParameters/c0a446026cd171aa4e2011cd4053b893c5c9767e02965e2850805481c309ca55/S3VersionKey",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2357,7 +2547,41 @@
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "NextJsStack/AssetParameters/ec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2/ArtifactHash",
+                    "path": "NextJsStack/AssetParameters/c0a446026cd171aa4e2011cd4053b893c5c9767e02965e2850805481c309ca55/ArtifactHash",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.91.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.91.0"
+                }
+              },
+              "3c8ac5a238c1547e7c4b4ea7831a3fd3342cd48445ab203c6db6bde5a601b2cc": {
+                "id": "3c8ac5a238c1547e7c4b4ea7831a3fd3342cd48445ab203c6db6bde5a601b2cc",
+                "path": "NextJsStack/AssetParameters/3c8ac5a238c1547e7c4b4ea7831a3fd3342cd48445ab203c6db6bde5a601b2cc",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "NextJsStack/AssetParameters/3c8ac5a238c1547e7c4b4ea7831a3fd3342cd48445ab203c6db6bde5a601b2cc/S3Bucket",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "NextJsStack/AssetParameters/3c8ac5a238c1547e7c4b4ea7831a3fd3342cd48445ab203c6db6bde5a601b2cc/S3VersionKey",
+                    "constructInfo": {
+                      "fqn": "@aws-cdk/core.CfnParameter",
+                      "version": "1.91.0"
+                    }
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "NextJsStack/AssetParameters/3c8ac5a238c1547e7c4b4ea7831a3fd3342cd48445ab203c6db6bde5a601b2cc/ArtifactHash",
                     "constructInfo": {
                       "fqn": "@aws-cdk/core.CfnParameter",
                       "version": "1.91.0"
@@ -2587,7 +2811,7 @@
                                           },
                                           ":s3:::",
                                           {
-                                            "Ref": "AssetParameters17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59S3Bucket890FACE5"
+                                            "Ref": "AssetParameters5f7b82c7a184781fd94f83dd69f64511326919b765839eb48a41b548b55cb952S3BucketF8DCCCBD"
                                           }
                                         ]
                                       ]
@@ -2602,7 +2826,7 @@
                                           },
                                           ":s3:::",
                                           {
-                                            "Ref": "AssetParameters17cb764a0f9f06b96ad2413ebb8bb9689d382cd7614310299440bc6aa7cb3f59S3Bucket890FACE5"
+                                            "Ref": "AssetParameters5f7b82c7a184781fd94f83dd69f64511326919b765839eb48a41b548b55cb952S3BucketF8DCCCBD"
                                           },
                                           "/*"
                                         ]
@@ -2710,7 +2934,7 @@
                                           },
                                           ":s3:::",
                                           {
-                                            "Ref": "AssetParametersb6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6fS3Bucket298A56A8"
+                                            "Ref": "AssetParameters23398b997211e2b9d889979e9c47c7d2a46d48b93926083bcf919179f40f47ffS3Bucket74A65D36"
                                           }
                                         ]
                                       ]
@@ -2725,7 +2949,7 @@
                                           },
                                           ":s3:::",
                                           {
-                                            "Ref": "AssetParametersb6fa7e85cd3af7601a5112f233dc59610206998bab862ff3bb696bc97c45ee6fS3Bucket298A56A8"
+                                            "Ref": "AssetParameters23398b997211e2b9d889979e9c47c7d2a46d48b93926083bcf919179f40f47ffS3Bucket74A65D36"
                                           },
                                           "/*"
                                         ]
@@ -2751,7 +2975,7 @@
                                           },
                                           ":s3:::",
                                           {
-                                            "Ref": "AssetParametersec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2S3Bucket79BDD579"
+                                            "Ref": "AssetParametersc0a446026cd171aa4e2011cd4053b893c5c9767e02965e2850805481c309ca55S3BucketC4967B31"
                                           }
                                         ]
                                       ]
@@ -2766,7 +2990,48 @@
                                           },
                                           ":s3:::",
                                           {
-                                            "Ref": "AssetParametersec1ea4946f6631eb1aa38197218d6206be74b43f105c4b867c8dc90f8c4fbfb2S3Bucket79BDD579"
+                                            "Ref": "AssetParametersc0a446026cd171aa4e2011cd4053b893c5c9767e02965e2850805481c309ca55S3BucketC4967B31"
+                                          },
+                                          "/*"
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "s3:GetObject*",
+                                    "s3:GetBucket*",
+                                    "s3:List*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":s3:::",
+                                          {
+                                            "Ref": "AssetParameters3c8ac5a238c1547e7c4b4ea7831a3fd3342cd48445ab203c6db6bde5a601b2ccS3BucketA12D1BB8"
+                                          }
+                                        ]
+                                      ]
+                                    },
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          "arn:",
+                                          {
+                                            "Ref": "AWS::Partition"
+                                          },
+                                          ":s3:::",
+                                          {
+                                            "Ref": "AssetParameters3c8ac5a238c1547e7c4b4ea7831a3fd3342cd48445ab203c6db6bde5a601b2ccS3BucketA12D1BB8"
                                           },
                                           "/*"
                                         ]

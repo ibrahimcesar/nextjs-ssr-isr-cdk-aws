@@ -1,15 +1,8 @@
-import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from "next/link"
 
 const Ditto = ({ data }) => {
-
-
-  const router = useRouter()
-  if (router.isFallback) {
-    return <div>Loading...</div>
-  }
   
   return (
     <>
@@ -36,27 +29,12 @@ const Ditto = ({ data }) => {
   )
 }
 
-export async function getStaticPaths() {
-  const req = await fetch('https://pokeapi.co/api/v2/pokemon')
-  const pokeData = await req.json()
-  const paths = pokeData.results.map(pokemon => ({ params: { ditto: pokemon.name }}))
-  return {
-    paths,
-    fallback: true
-  }
-}
-
-export async function getStaticProps({ params }) {
-  const { ditto } = params
+export async function getServerSideProps(context) {
+  const { ditto } = context.query;
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${ditto}`)
   const data = await res.json()
 
-  return {
-    props: {
-      data,
-    },
-    revalidate: 300,
-  }
+  return { props: { data } }
 }
 
 export default Ditto
