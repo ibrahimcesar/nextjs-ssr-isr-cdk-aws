@@ -3,18 +3,20 @@ import Image from 'next/image'
 import Link from "next/link"
 
 const Ditto = ({ data }) => {
+
+  const pokeImage = data?.sprites?.other?.["official-artwork"]?.front_default ?? data?.sprites?.front_default
   
   return (
     <>
-                <Head>
+      <Head>
         <title>{data.name} - PokéServerless</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
     <section>
       <h1 style={{ textTransform: "capitalize" }}>{data.species.name}</h1>
       <div>
-        <Image src={data.sprites.other["official-artwork"].front_default} width={500}
-        height={500} alt={`Pokémon ${data.name}`} />
+        <Image src={pokeImage} width={200}
+        height={200} alt={`Pokémon ${data.name}`} />
       </div>
       <div>
         <p><b>Type:</b></p>
