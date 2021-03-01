@@ -1,9 +1,7 @@
-// bin.ts
-import * as cdk from "@aws-cdk/core";
 import { Builder } from "@sls-next/lambda-at-edge";
 import { NextStack } from "./stack";
+import * as cdk from "@aws-cdk/core";
 
-// Run the serverless builder, this could be done elsewhere in your workflow
 const builder = new Builder(".", "./build", {args: ['build']});
 
 builder
@@ -16,6 +14,6 @@ builder
     });
   })
   .catch((e) => {
-    console.log(e);
+    console.error(e);
     process.exit(1);
   });

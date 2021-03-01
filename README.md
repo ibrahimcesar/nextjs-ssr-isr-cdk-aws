@@ -2,7 +2,7 @@
 
 > **[Live Demo](https://d2isii528175w2.cloudfront.net)**
 
-## This is just a Proof of Concept
+## This is _just_ a Proof of Concept!
 
 Minimal NextJS with Server Side Rendering (SSR) – **Gotta Fetch'Em All!** – and deployed with [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/) on AWS using CloudFront and Lambda@Edge.
 
