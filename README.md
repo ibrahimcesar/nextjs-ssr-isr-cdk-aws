@@ -4,7 +4,7 @@
 
 ## This is just a Proof of Concept
 
-Minimal NextJS with Server Side Rendering (SSR) and deployed with [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/) on AWS using CloudFront and Lambda@Edge.
+Minimal NextJS with Server Side Rendering (SSR) – **Gotta Fetch'Em All!** – and deployed with [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/) on AWS using CloudFront and Lambda@Edge.
 
 Each one of the Pokémons pages are just a **Ditto** `[ditto].js` making a SSR call to the PokéApp, this way, transformig itself in the requested pokemon by name, e.g. [Toguepi](https://d2isii528175w2.cloudfront.net/togepi).
 
