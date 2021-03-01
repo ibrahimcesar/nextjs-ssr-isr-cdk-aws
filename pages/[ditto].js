@@ -7,27 +7,31 @@ const Ditto = ({ data }) => {
   const pokeImage = data?.sprites?.other?.["official-artwork"]?.front_default ?? data?.sprites?.front_default
   
   return (
-    <>
-      <Head>
-        <title>{data.name} - PokéServerless</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-    <section>
-      <h1 style={{ textTransform: "capitalize" }}>{data.species.name}</h1>
-      <div>
-        <Image src={pokeImage} width={200}
-        height={200} alt={`Pokémon ${data.name}`} />
-      </div>
-      <div>
-        <p><b>Type:</b></p>
-        <ul style={{listStyle: "none"}}>
-          {data.types.map( (info, _i) => (
-            <li style={{textTransform: "capitalize"}} key={_i}>{ info.type.name}</li>))}
-        </ul>
-      </div>
-      <Link href="/"><a style={{textDecoration: "none", color: "#000"}}>🔙 Back to the main list</a></Link>
+     <>
+        <Head>
+          <title>{data.name} - PokéServerless</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+       </Head>
+      <section>
+        <h1 style={{ textTransform: "capitalize" }}>{data.species.name}</h1>
+        <div>
+          <Image 
+            src={pokeImage} 
+            width={200}
+            height={200} 
+            alt={`Pokémon ${data.name}`
+          />
+        </div>
+        <div>
+          <p><b>Type:</b></p>
+            <ul style={{listStyle: "none"}}>
+              {data.types.map( (info, _i) => (
+                <li style={{textTransform: "capitalize"}} key={_i}>{ info.type.name}</li>))}
+            </ul>
+        </div>
+          <Link href="/"><a style={{textDecoration: "none", color: "#000"}}>🔙 Back to the main list</a></Link>
       </section>
-      </>
+     </>
   )
 }
 
