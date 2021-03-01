@@ -4,6 +4,7 @@ import Link from "next/link"
 
 const Ditto = ({ data }) => {
 
+  // For some reason not all Pokémons have "official artworks" specially those with a bazillion colors. I'm from time when 251 was jaw dropping! 
   const pokeImage = data?.sprites?.other?.["official-artwork"]?.front_default ?? data?.sprites?.front_default
   
   return (

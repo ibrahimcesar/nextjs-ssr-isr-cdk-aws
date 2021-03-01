@@ -1,6 +1,6 @@
+import * as cdk from "@aws-cdk/core";
 import { Builder } from "@sls-next/lambda-at-edge";
 import { NextStack } from "./stack";
-import * as cdk from "@aws-cdk/core";
 
 const builder = new Builder(".", "./build", {args: ['build']});
 
