@@ -9,6 +9,9 @@ builder
   .then(() => {
     const app = new cdk.App();
     new NextStack(app, "NextJsStack", {
+      env: {
+        region: 'us-east-1',
+      },
       analyticsReporting: true,
       description: "Testing deploying NextJS Serverless Construct"
     });
