@@ -8,6 +8,18 @@ Minimal NextJS with Server Side Rendering (SSR) – **Gotta Fetch'Em All!** – 
 
 Each one of the Pokémons pages are just a **Ditto** `[ditto].js` making a SSR call to the PokéApi, this way, transformig itself in the requested pokemon by name, e.g. [Toguepi](https://d2isii528175w2.cloudfront.net/togepi).
 
+## Deploy it yourself!
+
+You will need working `aws` credentials. [Follow this guide](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
+
+Run:
+
+```
+npm run cdk bootstrap
+npm run cdk deploy
+```
+
+Now you can navigate to the AWS console > CloudFront and find the URL for your new distribution.
 
 ## Thanks!
 [NextJS](https://nextjs.org/) – What a great framework! And the freedom to build and deploy wherever we need or want! Great fan  
