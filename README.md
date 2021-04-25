@@ -1,14 +1,14 @@
-# PokéServerless
+## Minimal NextJS using Server Side Rendering (SSR) and deployed with Serverless Nextjs CDK construct on AWS using CloudFront and Lambda@Edge
 
 > **[Live Demo](https://d2isii528175w2.cloudfront.net)**
 
-## This is _just_ a Proof of Concept!
+### This is _just_ a Proof of Concept!
 
 Minimal NextJS with Server Side Rendering (SSR) – **Gotta Fetch'Em All!** – and deployed with [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/) on AWS using CloudFront and Lambda@Edge.
 
 Each one of the Pokémons pages are just a **Ditto** `[ditto].js` making a SSR call to the PokéApi, this way, transformig itself in the requested pokemon by name, e.g. [Toguepi](https://d2isii528175w2.cloudfront.net/togepi).
 
-## Deploy it yourself!
+### Deploy it yourself!
 
 You will need working `aws` credentials. [Follow this guide](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
 
@@ -21,7 +21,7 @@ npm run cdk deploy
 
 Now you can navigate to the AWS console > CloudFront and find the URL for your new distribution.
 
-## Thanks!
+### Thanks!
 [NextJS](https://nextjs.org/) – What a great framework! And the freedom to build and deploy wherever we need or want! Great fan  
 [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/), in special [Henry Kirkness](https://github.com/kirkness) and 
 [Daniel Phang](https://github.com/dphang) for all work at [this feature](https://github.com/serverless-nextjs/serverless-next.js/pull/878).
