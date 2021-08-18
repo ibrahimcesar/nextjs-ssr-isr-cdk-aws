@@ -1,6 +1,6 @@
 ## Minimal NextJS using Server Side Rendering (SSR) and deployed with Serverless Nextjs CDK construct on AWS using CloudFront and Lambda@Edge
 
-> **[Live Demo](https://d2isii528175w2.cloudfront.net)**
+> **[Live Demo](https://d3ann5g9nk7lhn.cloudfront.net/)**
 
 ### This is _just_ a Proof of Concept!
 
