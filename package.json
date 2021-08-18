@@ -12,13 +12,19 @@
   "dependencies": {
     "next": "^11.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "redaxios": "^0.4.1"
   },
   "devDependencies": {
-    "@aws-cdk/aws-lambda": "^1.191.0",
-    "@aws-cdk/core": "^1.191.0",
+    "@aws-cdk/aws-cloudfront-origins": "^1.119.0",
+    "@aws-cdk/aws-lambda": "^1.119.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.119.0",
+    "@aws-cdk/aws-route53-targets": "^1.119.0",
+    "@aws-cdk/aws-s3-deployment": "^1.119.0",
+    "@aws-cdk/core": "^1.119.0",
     "@sls-next/cdk-construct": "3.2.0",
     "@sls-next/lambda-at-edge": "3.2.0",
+    "@types/gtag.js": "^0.0.7",
     "@types/node": "^16.6.1",
     "@types/react": "^17.0.18",
     "aws-cdk": "^1.119.0",
