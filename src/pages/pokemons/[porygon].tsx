@@ -27,8 +27,8 @@ const Porygon = (props: PokemonApi) => {
     <>
     <section className="container">
       <Head>
-        <title>{pokeName} | PokéSSR - AWS Amplify</title>
-        <meta property="og:title" content={`${pokeName} | PokéSSR - AWS Amplify`} key="title" />
+        <title>{pokeName} | PokéSSR - AWS Serverless Lambda@Edge</title>
+        <meta property="og:title" content={`${pokeName} | PokéSSR - AWS Serverless Lambda@Edge`} key="title" />
       </Head>
       <PokemonForm poke={props} />
     </section>
@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   if (context.params) {
 
-    data = await getPokemonData(context.params.name as string)
+    data = await getPokemonData(context.params.porygon as string)
   } else {
     data = {}
   }
@@ -56,12 +56,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 };
 
-export const getStaticPaths: GetStaticPaths<{ name: string }> = async () => {
+export const getStaticPaths: GetStaticPaths<{ porygon: string }> = async () => {
 
   const pokemons = await getPokemons(25) as Pokedex
 
   const paths = pokemons.results.map((pokemon) => {
-    return { params: { name: pokemon.name.toString() } };
+    return { params: { porygon: pokemon.name.toString() } };
   });
 
   return {

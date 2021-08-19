@@ -18,8 +18,8 @@ const Ditto = (props: PokemonApi) => {
   return (
     <section className="container">
       <Head>
-        <title>A wild {pokeName} appears! | PokéSSR - AWS Amplify</title>
-        <meta property="og:title" content={`A wild ${pokeName} appears! | PokéSSR - AWS Amplify`} key="title" />
+        <title>A wild {pokeName} appears! | PokéSSR - AWS Serverless Lambda@Edge</title>
+        <meta property="og:title" content={`A wild ${pokeName} appears! | PokéSSR - AWS Serverless Lambda@Edge`} key="title" />
       </Head>
       <PokemonForm poke={props}/>
     </section>

@@ -1,11 +1,3 @@
-// To parse this data:
-//
-//   import { Convert, Pokemon } from "./file";
-//
-//   const pokemon = Convert.toPokemon(json);
-//
-// These functions will throw an error if the JSON doesn't
-// match the expected interface, even if the JSON is valid.
 
 export interface Pokemon {
   abilities: Ability[];

@@ -16,11 +16,7 @@
     "redaxios": "^0.4.1"
   },
   "devDependencies": {
-    "@aws-cdk/aws-cloudfront-origins": "^1.119.0",
     "@aws-cdk/aws-lambda": "^1.119.0",
-    "@aws-cdk/aws-lambda-event-sources": "^1.119.0",
-    "@aws-cdk/aws-route53-targets": "^1.119.0",
-    "@aws-cdk/aws-s3-deployment": "^1.119.0",
     "@aws-cdk/core": "^1.119.0",
     "@sls-next/cdk-construct": "3.2.0",
     "@sls-next/lambda-at-edge": "3.2.0",

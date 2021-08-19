@@ -1,12 +1,3 @@
-// To parse this data:
-//
-//   import { Convert, Pokedex } from "./file";
-//
-//   const pokedex = Convert.toPokedex(json);
-//
-// These functions will throw an error if the JSON doesn't
-// match the expected interface, even if the JSON is valid.
-
 export interface Pokedex {
   count: number;
   next: string;
