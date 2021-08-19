@@ -27,9 +27,12 @@ const Porygon = (props: PokemonApi) => {
     <>
     <section className="container">
       <Head>
-        <title>{pokeName} | PokéSSR - AWS Serverless Lambda@Edge</title>
+        <title>{pokeName} | PokéServerless - AWS Serverless Lambda@Edge</title>
         <meta property="og:title" content={`${pokeName} | PokéSSR - AWS Serverless Lambda@Edge`} key="title" />
       </Head>
+      <header>
+          <h1>PokéServerless — Incremental Static Regeneration</h1>
+      </header>
       <PokemonForm poke={props} />
     </section>
     <p className="poke-center">{`Generated at ${new Date(props.date).toLocaleString()}`}</p>

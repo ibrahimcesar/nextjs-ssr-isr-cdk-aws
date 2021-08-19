@@ -21,6 +21,12 @@ footer {
   text-align: center;
 }
 
+header h1 {
+  text-align: center;
+  color: #002147;
+
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -34,6 +40,24 @@ footer {
 .ditto {
   justify-self: center;
   padding-top: 5%;
+}
+
+.poke-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  text-align: center;
+}
+
+footer a,
+.poke-options a {
+  color: #002147;
+}
+
+.poke-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 6rem;
 }
 
 .poke-list {
@@ -62,6 +86,7 @@ footer {
 
 .poke-content {
   align-self: center;
+  text-align: center;
 }
 
 .poke-center {

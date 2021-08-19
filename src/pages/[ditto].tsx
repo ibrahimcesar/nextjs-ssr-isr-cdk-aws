@@ -20,6 +20,9 @@ const Ditto = (props: PokemonApi) => {
         <title>{pokeName} | PokéServeless - AWS Serverless Lambda@Edge</title>
         <meta property="og:title" content={`${pokeName} | PokéServeless - AWS Serverless Lambda@Edge`} key="title" />
       </Head>
+      <header>
+          <h1>PokéServerless — Server Side Rendering</h1>
+      </header>
       <PokemonForm poke={props} />
     </section>
   )

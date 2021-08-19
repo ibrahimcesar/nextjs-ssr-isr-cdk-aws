@@ -8,34 +8,25 @@
 
 > Next.js webapp using Server Side Rendering (SSR) and Incremental Static Regeneration (ISR) deployed with Serverless Nextjs CDK construct on AWS using CloudFront and Lambda@Edge
 
-> **[Live Demo](https://d3ann5g9nk7lhn.cloudfront.net/)**
+> **[Live Demo](https://d3k4okkgstczau.cloudfront.net)**
 
-### This is _just_ a Proof of Concept!
+## PokéServerless _just_ a Proof of Concept!
 
-Minimal NextJS with Server Side Rendering (SSR) – **Gotta Fetch'Em All!** – and deployed with [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/) on AWS using CloudFront and Lambda@Edge.
+Minimal NextJS with Server Side Rendering (SSR) and Incremental Static Generation (ISR) – **Gotta Fetch'Em All!** – and deployed with [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/) on AWS using CloudFront and Lambda@Edge.
 
-Each one of the Pokémons pages are just a **Ditto** `[ditto].js` making a SSR call to the PokéApi, this way, transformig itself in the requested pokemon by name, e.g. [Toguepi](https://d2isii528175w2.cloudfront.net/togepi).
 
-### Deploy it yourself!
+## 🌟 [Read the post for more context](https://ibrahimcesar.cloud/blog/do-zero-ao-salve-mundo-em-aws-cdk-cloud-development-kit/)
 
-You will need working `aws` credentials. [Follow this guide](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
+### Special Thanks
 
-Run:
+- [NextJS](https://nextjs.org/), a great framework! And the freedom to build and deploy wherever we need or want! Great fan
+- [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/), in special [Henry Kirkness](https://github.com/kirkness) and 
+- [Daniel Phang](https://github.com/dphang) for all work at [this feature](https://github.com/serverless-nextjs/serverless-next.js/pull/878) and [ISR](https://github.com/serverless-nextjs/serverless-next.js/pull/1028)
+- [Adam Elmore](https://twitter.com/aeduhm) for put a [bounty on the ISR issue](https://twitter.com/aeduhm/status/1382093398077796357?s=20)!
 
-```
-npm run cdk bootstrap
-npm run cdk deploy
-```
 
-Now you can navigate to the AWS console > CloudFront and find the URL for your new distribution.
+### MIT License
 
-### Thanks!
-[NextJS](https://nextjs.org/) – What a great framework! And the freedom to build and deploy wherever we need or want! Great fan  
-[Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/), in special [Henry Kirkness](https://github.com/kirkness) and 
-[Daniel Phang](https://github.com/dphang) for all work at [this feature](https://github.com/serverless-nextjs/serverless-next.js/pull/878).
- 
- ### MIT License
- 
 © Copyright 2021 [Ibrahim Cesar](https://ibrahimcesar.cloud)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

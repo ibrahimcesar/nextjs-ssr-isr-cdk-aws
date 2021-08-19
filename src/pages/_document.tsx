@@ -45,7 +45,7 @@ class PokeDoc extends Document {
         <body>
           <Main />
           <NextScript />
-          <footer>© {new Date().getFullYear()} Ibrahim Cesar | <Link href="https://updown.io/akzp"><a>PokéAPI Status</a></Link></footer>
+          <footer>© {new Date().getFullYear()} <Link href="https://twitter.com/ibrahimcesar"><a>Ibrahim Cesar</a></Link> | <Link href="https://updown.io/akzp"><a>PokéAPI Status</a></Link></footer>
         </body>
       </Html>
     )
