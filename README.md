@@ -1,4 +1,12 @@
-## Minimal NextJS using Server Side Rendering (SSR) and deployed with Serverless Nextjs CDK construct on AWS using CloudFront and Lambda@Edge
+<div align="center">
+
+<img src="https://d2908q01vomqb2.cloudfront.net/7719a1c782a1ba91c031a682a0a2f8658209adbf/2021/01/15/cdk-logo6-1260x476.png" alt="CDK" width="620" />
+
+# AWS CDK serverless deploy for Next.js with SSR and ISR
+
+</div>
+
+> Next.js webapp using Server Side Rendering (SSR) and Incremental Static Regeneration (ISR) deployed with Serverless Nextjs CDK construct on AWS using CloudFront and Lambda@Edge
 
 > **[Live Demo](https://d3ann5g9nk7lhn.cloudfront.net/)**
 
