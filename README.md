@@ -10,7 +10,7 @@
 
 > **[Live Demo](https://d3k4okkgstczau.cloudfront.net)**
 
-## PokéServerless _just_ a Proof of Concept!
+## PokéServerless is _just_ a Proof of Concept!
 
 Minimal NextJS with Server Side Rendering (SSR) and Incremental Static Generation (ISR) – **Gotta Fetch'Em All!** – and deployed with [Serverless Nextjs CDK construct](https://serverless-nextjs.com/docs/cdkconstruct/) on AWS using CloudFront and Lambda@Edge.
 
