@@ -8,7 +8,7 @@
 
 > Next.js webapp using Server Side Rendering (SSR) and Incremental Static Regeneration (ISR) deployed with Serverless Nextjs CDK construct on AWS using CloudFront and Lambda@Edge
 
-> **[Live Demo](https://d3k4okkgstczau.cloudfront.net)**
+> **[Live Demo](https://d3k4okkgstczau.cloudfront.net/)**
 
 ## PokéServerless is _just_ a Proof of Concept!
 
