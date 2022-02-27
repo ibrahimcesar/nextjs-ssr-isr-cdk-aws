@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "cdk": "cdk",
+    "cdk:deploy": "cdk deploy --profile demo",
     "deploy": "ts-node bin.ts"
   },
   "dependencies": {
